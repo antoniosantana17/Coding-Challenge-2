@@ -15,4 +15,14 @@
 // Testing the function with $100
 console.log(calcTip(100)); // Expected output:20
 
+// Utilize Arrays
+let bills = [275, 40, 430, 125, 555, 44];
+let tips = bills.map(calcTip);
+let totals = bills.map((bill, index) => bill + tips[index]);
+
+console.log('Bills:', bills);
+console.log('Tips:',tips);
+console.log('Totals:', totals);
+
+
 
